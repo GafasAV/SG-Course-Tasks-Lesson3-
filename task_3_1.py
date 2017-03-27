@@ -1,7 +1,7 @@
-__author__ = "Andrew Gafas"
-
-
 from html import escape as html_escape
+
+
+__author__ = "Andrew Gafas"
 
 
 def writer(mode):
