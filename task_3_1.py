@@ -25,10 +25,10 @@ def writer(mode):
             res = s
             for el in modes:
                 if el in func_list.keys():
-                    fn = func_list[el]
-                    res = fn(res)
+                    func = func_list[el]
+                    res = func(res)
 
-            return res
+            return fn(res)
 
         return wrapper
 
