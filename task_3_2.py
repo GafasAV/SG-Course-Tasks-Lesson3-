@@ -34,9 +34,9 @@ class CSVLoader(object):
     """
     @staticmethod
     def csv_load(file):
-        lines = file.read()
+        data = file.read()
 
-        text = "".join(line.replace(";", " ") for line in lines)
+        text = "".join(line.replace(";", " ") for line in data)
 
         return text
 
