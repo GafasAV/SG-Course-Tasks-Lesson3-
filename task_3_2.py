@@ -42,8 +42,8 @@ class AbsLoader(ABC):
 class CSVLoader(AbsLoader):
     """
     .csv file class
-    -csv_load() Load data from file
-    -csv_save() Write csv data to file
+    -load_from() Load data from file
+    -save_to() Write csv data to file
     """
     @staticmethod
     def load_from(file):
@@ -63,8 +63,8 @@ class CSVLoader(AbsLoader):
 class JSONLoader(AbsLoader):
     """
     .json file class
-    -json_load() Read data from file
-    -json_save() Write json data to file
+    -load_from() Read data from file
+    -save_to() Write json data to file
     """
     @staticmethod
     def load_from(file):
